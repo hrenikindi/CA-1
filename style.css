@@ -183,3 +183,61 @@ input:focus{
     width: 40px;
     margin-right: 10px;
   }
+  /*Media Queries*/
+  @media(max-width:430px){ 
+    /* not displaying the search bar and side bar when width less than 430px*/
+      .searchbar{
+        display:none;
+      }
+      .sidebar{
+        display: none;
+      }
+      .logo{
+        display: inline;
+        float: left;
+        position: relative;
+        bottom: 10px;
+      }  
+      .desc {
+        display: flex; /*Flex property*/
+      }
+          
+    }
+  
+    @media(max-width:768px){
+      .searchbar{
+        display: none;
+      }
+      .sidebar{
+        display:none;
+      }
+      .desc {
+        display: flex; /*Flex property*/
+      }
+      .show-sidebar{
+        display:inline;
+        position: fiexd;
+        top: 4.4rem;
+        height: auto;
+      }
+    }
+  
+    @media(min-width:774px) {
+      .searchbar input{
+        width: 300px;
+      }
+      
+      .show-sidebar{
+        display:inline;
+        position: fiexd;
+        top: 4.4rem;
+        height: auto;
+      }
+      .allvideos {
+        display: flex;/*Flex Property*/
+        flex-direction: row;/*Flex Property*/
+        justify-content: space-around;/*Flex Property*/
+        flex-wrap: wrap;/*Flex Property*/
+        padding-left: 10px;
+      }
+    }
